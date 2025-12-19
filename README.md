@@ -65,15 +65,20 @@ This approach reflects industry-standard backend architecture patterns.
 
 ---
 
-## 🏗 Architecture Diagram (Conceptual)
-```mermaid
+## 🏗 Architecture Diagram (Conceptual
 flowchart TD
     U[User] --> F[Frontend UI]
+
     F -->|POST /tasks| B[FastAPI Backend]
-    B -->|Create Task ID| T[Task Store]
-    B --> W[Background Worker]
+
+    B -->|Generate Task ID| T[Task Store]
+    B -->|Start Async Job| W[Background Worker]
+
     W -->|Process Task| T
-    F -->|GET /tasks/{task_id}| B
-    B -->|Status Response| F
+    W -->|Update Status: COMPLETED| T
+
+    F -->|GET /tasks/<task_id>| B
+    B -->|Return Task Status| F
+
 
 
