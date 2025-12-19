@@ -83,5 +83,16 @@ flowchart TD
 
 <img src="./assets/async-workflow.svg" alt="Async Workflow Animation" width="100%" />
 
+## 🔁 CI/CD Pipeline
+
+This project uses GitHub Actions for Continuous Integration and Continuous Delivery.
+
+- Automatically runs on every push and pull request
+- Sets up the FastAPI backend environment
+- Installs dependencies and performs a smoke test
+- Ensures asynchronous task processing remains stable
+
+This CI/CD setup reflects production-grade backend development practices.
+
 
 
