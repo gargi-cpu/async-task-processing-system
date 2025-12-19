@@ -79,6 +79,9 @@ flowchart TD
 
     F -->|GET /tasks/<task_id>| B
     B -->|Return Task Status| F
+## 🎬 Animated Workflow
+
+<img src="./assets/async-workflow.svg" alt="Async Workflow Animation" width="100%" />
 
 
 
