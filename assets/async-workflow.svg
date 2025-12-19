@@ -1,0 +1,48 @@
+<svg width="900" height="420" viewBox="0 0 900 420"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    .title { font: bold 28px sans-serif; fill: #ffffff; }
+    .label { font: 16px sans-serif; fill: #ffffff; }
+    .box { fill: #2563eb; rx: 12; }
+    .worker { fill: #059669; rx: 12; }
+    .store { fill: #7c3aed; rx: 12; }
+    .arrow {
+      stroke: #ffffff;
+      stroke-width: 2;
+      fill: none;
+      stroke-dasharray: 6;
+      animation: dash 2s linear infinite;
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -12; }
+    }
+  </style>
+
+  <rect width="100%" height="100%" fill="#0f172a"/>
+
+  <text x="450" y="40" text-anchor="middle" class="title">
+    Asynchronous Task Processing Workflow
+  </text>
+
+  <text x="40" y="130" class="label">👩‍💻 Create Task</text>
+  <text x="700" y="130" class="label">👩‍💼 Check Status</text>
+
+  <rect x="330" y="90" width="240" height="50" class="box"/>
+  <text x="450" y="122" text-anchor="middle" class="label">FastAPI Backend</text>
+
+  <rect x="170" y="200" width="200" height="50" class="store"/>
+  <text x="270" y="232" text-anchor="middle" class="label">Task Store</text>
+
+  <rect x="530" y="200" width="220" height="50" class="worker"/>
+  <text x="640" y="232" text-anchor="middle" class="label">Background Worker</text>
+
+  <path d="M120 140 L330 115" class="arrow"/>
+  <path d="M570 115 L760 140" class="arrow"/>
+  <path d="M450 140 L270 200" class="arrow"/>
+  <path d="M450 140 L640 200" class="arrow"/>
+
+  <text x="450" y="330" text-anchor="middle" class="label">
+    Status: PENDING → COMPLETED
+  </text>
+</svg>
