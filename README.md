@@ -94,5 +94,6 @@ This project uses GitHub Actions for Continuous Integration and Continuous Deliv
 
 This CI/CD setup reflects production-grade backend development practices.
 
+![CI/CD](https://github.com/gargi-cpu/async-task-processing-system/actions/workflows/ci-cd.yml/badge.svg)
 
 
